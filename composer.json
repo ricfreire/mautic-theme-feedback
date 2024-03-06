@@ -1,0 +1,13 @@
+{
+  "name": "mautic/feedback",
+  "description": "Feedback Email Theme by Ricardo Freire",
+  "type": "mautic-theme",
+  "keywords": ["mautic","theme"],
+  "extra": {
+    "install-directory-name": "feedback"
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "mautic/core-lib": "^5.0"
+  }
+}

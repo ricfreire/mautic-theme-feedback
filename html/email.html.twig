@@ -1,0 +1,46 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto"></mj-font>
+    <mj-font name="Space Grotesk" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap"></mj-font>
+    <mj-style> .feedback-text a { color: #1767E4 !important; } </mj-style>
+    <mj-attributes>
+      <mj-all font-family="Roboto, Helvetica, Arial, sans-serif"></mj-all>
+      <mj-text font-weight="400" color="#232323" line-height="22px"></mj-text>
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#f2f2f2">
+    <!-- Webview -->
+    <mj-section full-width="full-width" background-color="#ffffff">
+      <mj-column width="100%">
+        <mj-text color="#414141" font-size="14px" padding="0px" align="center" css-class="feedback-text">{webview_text}</mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Body -->
+    <mj-section background-color="transparent" padding="60px 40px">
+      <mj-column width="100%">
+        <mj-image padding="0px" src="{{ getAssetUrl('themes/'~template~'/assets/logo.png', null, null, true ) }}" width="160px"></mj-image>
+        <mj-spacer height="40px"></mj-spacer>
+        <mj-text padding="0px" align="center" font-size="30px" color="#232323" font-family="Space Grotesk, Helvetica, Arial, sans-serif" line-height="40px">Thank you for your feedback</mj-text>
+        <mj-spacer height="30px"></mj-spacer>
+        <mj-text padding="0px" align="left" font-size="16px" color="#232323" css-class="feedback-text">
+          <p>We wanted to take a moment to express our gratitude for sharing your feedback with us. Your input is invaluable and helps us grow even stronger.</p>
+          <p>Rest assured, we've received your message and every piece of feedback is carefully reviewed. Your insights play a crucial role in our continuous improvement process.</p>
+          <p>We look forward to continuing to serve you in the best way possible.</p>
+          <p>Warm regards,</p>
+        </mj-text>
+        <mj-spacer height="20px"></mj-spacer>
+        <mj-image align="left" padding="0px" width="160px" src="{{ getAssetUrl('themes/'~template~'/assets/sign.png', null, null, true ) }}"></mj-image>
+        <mj-spacer height="10px"></mj-spacer>
+        <mj-text align="left" padding="0px" font-size="14px" color="#333333">Joe Doe - Assistant</mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Footer -->
+    <mj-section padding="40px" full-width="full-width" background-color="#333333">
+      <mj-column width="100%">
+        <mj-text color="#ffffff" font-size="14px" padding="0px" align="center" css-class="feedback-text">{unsubscribe_text}</mj-text>
+        <mj-spacer height="10px"></mj-spacer>
+        <mj-text color="#a5a5a5" font-size="12px" padding="0px" align="center" css-class="feedback-text">Crafted with love by <a href="https://github.com/ricfreire">Ricardo Freire</a>.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
